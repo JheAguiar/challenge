@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jwfWUkyJ3Rvi6E/1w0Nw8BziM20Iy8ZvFQh4kH82MiS5u1BdZqrCr7wlBAyUxVzX3rY/vUw4rWnG8p+Jc4BrIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1 class="header-title">IJM Care Solution</h1>
+        <div class="header-menu">
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="login-image">
+            <img src="img/urso.png" alt="Imagem de login">
+        </div>
+        <div class="content-inner">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Nome de Usuário</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="forgot-password">Esqueci minha senha</a>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-login">Login</button>
+                    </div>
+                </form>
+                <div class="register-link">
+                    <p>Não tem uma conta? <a href="cadastro.html">Quero me cadastrar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 IJM Care Solution | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

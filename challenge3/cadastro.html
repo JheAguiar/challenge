@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jwfWUkyJ3Rvi6E/1w0Nw8BziM20Iy8ZvFQh4kH82MiS5u1BdZqrCr7wlBAyUxVzX3rY/vUw4rWnG8p+Jc4BrIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cadastro.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1 class="header-title">IJM Care Solution</h1>
+        <div class="header-menu">
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html"><i class="fas fa-user-plus"></i>Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-left">
+            <p class="large-text">Com o Sales Cloud Professional Edition, você tem acesso a:</p>
+            <ul>
+                <li>Dados pré-carregados e recursos para integrar os dados da sua empresa;</li>
+                <li>Processos, relatórios e dashboards pré-configurados;</li>
+                <li>Experiências guiadas para representantes, líderes e gestores de vendas;</li>
+                <li>Guias e outros materiais sobre boas práticas de vendas;</li>
+                <li>Onboarding integrado, treinamentos e webinars online;</li>
+                <li>Configuração de pontuação e roteamento de leads;</li>
+                <li>Ferramentas para automação de tarefas recorrentes;</li>
+                <li>Uma visão completa da performance de seus representantes e equipes de vendas.</li>
+            </ul>
+        </div>
+        <div class="content-right">
+            <div class="content-inner">
+                <div class="cadastro-form">
+                    <h2>Cadastre-se</h2>
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" name="sobrenome" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cnpjcpf">CNPJ/CPF</label>
+                            <input type="text" id="cnpjcpf" name="cnpjcpf" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <select id="pais" name="pais" required>
+                                <option value="">Selecione o País</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="eua">Estados Unidos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn-cadastro">Cadastrar</button>
+                        </div>
+                    </form>
+                    <div class="register-link">
+                        <p>Já tem uma conta? <a href="#login">Faça login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 IJM Care Solution | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

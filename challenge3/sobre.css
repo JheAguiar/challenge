@@ -1,0 +1,132 @@
+/* Estilos para o container */
+.container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Cor de fundo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos para o nome */
+.header .header-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para o menu */
+.header-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-menu li a:hover {
+    color: #ffc107;
+}
+
+/* Estilos para o conteúdo */
+.content {
+    padding: 100px 20px 20px; /* Espaço para o cabeçalho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para a galeria de imagens */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin: 20px;
+    text-align: center;
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.image-text-top,
+.image-text-bottom {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.image-text-bottom p {
+    margin: 5px 0;
+}
+
+.image-text-bottom a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.image-text-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .footer-content {
+    position: relative;
+    margin-bottom: 25px; /* Altura do rodapé */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

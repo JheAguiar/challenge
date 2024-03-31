@@ -1,0 +1,182 @@
+/* Estilos para o container */
+.container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Cor de fundo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #2980F2;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos para o nome */
+.header .header-title {
+    margin: 0;
+    margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+/* Estilos para o menu */
+.header-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-menu li {
+    display: inline;
+}
+
+.header-menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header-menu li a:hover {
+    background-color: #111;
+}
+
+/* Estilos para o conteúdo */
+.content {
+    text-align: center;
+    padding: 100px 20px 20px; /* Espaço para o cabeçalho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para a imagem de login */
+.login-image {
+    margin-right: 20px;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Arredonda as bordas da imagem */
+}
+
+/* Estilos para o conteúdo interno */
+.content-inner {
+    max-width: 400px; /* Ajuste conforme desejado */
+    width: 100%;
+    background-color: #fff; /* Cor de fundo */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o formulário de login */
+.login-form {
+    text-align: left; /* Alinha o formulário à esquerda */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.forgot-password {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #5D6167;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+}
+
+.footer .footer-content {
+    position: relative;
+    margin-bottom: 25px; /* Altura do rodapé */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo extra para ajustar o conteúdo abaixo do menu */
+@media (min-width: 768px) {
+    .content {
+        padding-top: 150px; /* Espaço para o cabeçalho */
+    }
+}

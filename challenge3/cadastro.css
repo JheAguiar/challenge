@@ -1,0 +1,223 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o container */
+.container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Cor de fundo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #2980F2;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos para o nome */
+.header .header-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para o menu */
+.header-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-menu li a:hover {
+    color: #ffc107;
+}
+
+/* Estilos para o conteúdo */
+.content {
+    padding: 100px 20px 20px; /* Espaço para o cabeçalho */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Estilos para o conteúdo esquerdo */
+.content-left {
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.content-left .large-text {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content-left ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilos para o conteúdo direito */
+.content-right {
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+/* Estilos para o conteúdo interno */
+.content-inner {
+    background-color: #fff; /* Cor de fundo */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o formulário de cadastro */
+.cadastro-form {
+    text-align: left; /* Alinha o formulário à esquerda */
+}
+
+.cadastro-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #ccc 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px);
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+.btn-cadastro {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastro:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #5D6167;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .footer-content {
+    position: relative;
+    margin-bottom: px; /* Altura do rodapé */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo extra para ajustar o conteúdo abaixo do menu */
+@media (min-width: 768px) {
+    .content {
+        padding-top: 150px; /* Espaço para o cabeçalho */
+    }
+
+    .content-left,
+    .content-right {
+        max-width: 100%;
+    }
+
+    .content-left {
+        order: 2;
+        padding-left: 40px;
+    }
+
+    .content-right {
+        order: 1;
+    }
+}
